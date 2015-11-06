@@ -29,37 +29,63 @@ Customer Class:
 
 1)
 Create a class called Customer with the following instance variables and methods.
+
 1. an integer variable representing the number of grocery items the customer has
+
 2. an integer variable representing the time remaining for the customer’s transaction to finish
+
 3. a constructor taking two integer parameters
+
 (a) the number of grocery items
+
 (b) the time it takes for the cashier to process (scan and bag) a single item
+
 4. a getter for the number of items
+
 5. a getter for the time remaining
+
 6. a method for decrementing the time remaining
  
 2)
 The GroceryStore Class
 
 Create a class called GroceryStore with the following instance variables and methods.
+
 1. An ArrayList of queues. Declare this to hold elements of type Queue.
+
 2. A constructor that takes an integer argument indicating how many lines there are in the
+
 grocery store and initializes the ArrayList appropriately. You will need to create one
 queue for each line.
+
 3. A public void method called run that takes the following parameters:
+
 (a) the number of time steps to execute
+
 (b) the probability that a customer will appear with each time step
+
 (c) the time it takes to process (scan and bag) a single item
+
 (d) the maximum number of items a customer might have
+
 The run() method will loop for the given number of time steps, running the simulation.
+
 4. A public void method called printData that takes no parameters and prints out the following:
+
 (a) the number of time steps run
+
 (b) the number of lines
+
 (c) the customer arrival probability
+
 (d) the time per item
+
 (e) the maximum number of items
+
 (f) the maximum length of each queue
+
 (g) the number of customers left in each queue
+
 (h) the total number of customers served
 
 3)
