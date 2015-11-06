@@ -1,5 +1,6 @@
 # GroceryStore
 Randomly Timed Events:
+
 Since events in the simulation happen at random times, we need to specify a probability that an
 event will happen at any given time. For example, if we specify that our time steps in the grocery
 store simulation are of duration one minute, we will want to specify the probability that a customer
@@ -23,6 +24,9 @@ method is useful: numberOfItems = gen.nextInt(maxItems) + 1. This will give a nu
 between 1 and the maximum number of items, inclusive
 
 Three Classes:
+
+Customer Class:
+
 1)
 Create a class called Customer with the following instance variables and methods.
 1. an integer variable representing the number of grocery items the customer has
@@ -36,6 +40,7 @@ Create a class called Customer with the following instance variables and methods
  
 2)
 The GroceryStore Class
+
 Create a class called GroceryStore with the following instance variables and methods.
 1. An ArrayList of queues. Declare this to hold elements of type Queue.
 2. A constructor that takes an integer argument indicating how many lines there are in the
@@ -59,6 +64,7 @@ The run() method will loop for the given number of time steps, running the simul
 
 3)
 The StoreDriver Class
+
 Write a driver class called StoreDriver to create several instances of the GroceryStore class
 with different numbers of lines. Run several simulations on each store varying the parameters to
 the run() method. Print out the results of each run.
