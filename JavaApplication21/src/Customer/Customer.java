@@ -17,7 +17,8 @@ public class Customer {
     private int items = 0;
     private int timeRemaining = 0;
     Random gen = new Random();
-    private int maxItems = 20;
+    private int maxItems = 150;
+    double sec = 0.0;
     
     /**
      * Constructor
@@ -49,10 +50,14 @@ public class Customer {
      */
     public int decrementTime(int timeRemaining){
         items = gen.nextInt(maxItems) + 1;
-        timeRemaining = 0;
+        while(timeRemaining > 0){
+        sec = gen.nextDouble();
+        
         
         
         return timeRemaining;
+        }
+        return 0;
     }
     
     
